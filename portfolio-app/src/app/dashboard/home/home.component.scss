@@ -1,0 +1,47 @@
+.app-background {
+    background-image: url('../../../assets/bImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 400px) {
+    .app-background {
+      background-size: contain;
+    }
+    .content{
+        background-size: contain;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .app-background {
+        background-size: contain;
+      }
+      .content{
+          background-size: contain;
+      }
+  }
+
+
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    button{
+        background-color:  #3F51B5;;
+        color: white;
+        border:0px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor:pointer;
+        margin-left: 15em;
+    }
+  }

@@ -1,0 +1,53 @@
+#project{
+    font-size: large;
+    margin-right: 20px;
+}
+
+@media (min-width: 900px) {
+    #menu {
+        display: none;
+    }
+    .mat-sidenav{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .homeLink {
+        display: none;
+    }
+  
+}
+
+.mat-sidenav {
+    background-color: #3F51B5;
+    width:150px;
+}
+
+.mat-toolbar{
+    height:50px;
+}
+.sidenavLink{
+    display: flex;
+    flex-direction: column;
+}
+
+.sideMenu{
+color: white !important;
+margin-top: 20px;
+}
+.container{
+    margin: 0px;
+}
+.button {
+    display: flex;
+    margin-left: 10px;
+    justify-content: left;
+    background-color:#3F51B5;
+}
+
+.sidenavLink .button {
+    display: flex;
+    float: left;
+}
+

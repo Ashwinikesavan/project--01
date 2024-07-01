@@ -1,0 +1,34 @@
+  <mat-toolbar color='primary'>
+    <button mat-icon-button (click)='sidenav.toggle()' id='menu' aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span id='project'>Ashwini Kesavan</span>
+    <div  class='homeLink'>
+    <a mat-button routerLink=''>Home <mat-icon>home</mat-icon> </a>
+    <a mat-button routerLink='/admin'*ngIf="isLoggedIn" >Portfolio <mat-icon>workspace_premium</mat-icon> </a>
+    <a mat-button class='logoutButton' *ngIf="isLoggedIn" (click)='logout()'>Logout<mat-icon>exit_to_app</mat-icon></a>
+</div>
+</mat-toolbar>
+
+<mat-sidenav-container >
+    <mat-sidenav  #sidenav  [fixedInViewport]='true' [fixedTopGap]='40' mode="side">
+        <div  class='sidenavLink'>
+        <div>
+        <a (click)='sidenav.close()' mat-button  class='sideMenu' routerLink=''><mat-icon>home</mat-icon>Home</a>
+        </div>
+        <div>
+        <a (click)='sidenav.close()' mat-button  class='sideMenu' *ngIf="isLoggedIn" routerLink='/admin'><mat-icon>workspace_premium</mat-icon>Portfolio</a>
+        </div>
+        <div>
+        <a class='sideMenu'  mat-button *ngIf="isLoggedIn" (click)='logout()'>Logout<mat-icon>exit_to_app</mat-icon></a>
+    </div>
+    </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  

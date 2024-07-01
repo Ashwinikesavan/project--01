@@ -1,0 +1,32 @@
+
+.example-card {
+    max-width: 400px;
+  }
+
+  .projectContainer{
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    margin:20px;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+
+  button{
+    background-color: #3F51B5;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+     justify-content: center;
+}
+ 
+p{
+  font-size: medium;
+  font-family:sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}

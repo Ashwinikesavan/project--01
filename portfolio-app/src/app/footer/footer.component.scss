@@ -1,0 +1,65 @@
+.footer {
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 20px 5px 0px 0px;
+    background-color: #3F51B5;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .footer a {
+    color: white;
+    margin-right: 50px;
+    padding-top: 20px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ccc;
+  }
+  
+  .footer .mat-icon {
+    font-size: 24px;
+  }
+
+  .footer h1 {
+margin-top:10px;
+float: left;
+margin-left: 20px;
+  }
+
+  @media (max-width: 900px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer a {
+      margin-right: 5px; /* Reduce margin even further on smaller screens */
+      padding-top: 5px;
+    }
+  
+    .footer h1 {
+      margin-top: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 5px;
+      font-size: 14px; /* Adjust font size for better readability on small screens */
+    }
+  
+    .footer a {
+      margin-right: 2px; /* Minimal margin on very small screens */
+      padding-top: 2px;
+    }
+  
+    .footer h1 {
+      margin-top: 2px;
+      font-size: 12px; /* Adjust font size for the copyright text */
+    }
+  }
